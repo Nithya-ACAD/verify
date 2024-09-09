@@ -1,6 +1,6 @@
 check50:
   checks:
-    1:
+    question1:
       - run: sqlite3 songify.db < queries/1.sql
         stdout: |
           Beautiful Things
@@ -14,7 +14,7 @@ check50:
           NIGHTS LIKE THIS
           Slow It Down
         exit: 0
-    6:
+    question6:
       - run: sqlite3 songify.db < queries/6.sql
         stdout: |
           Die With A Smile|Lady Gaga,Bruno Mars
