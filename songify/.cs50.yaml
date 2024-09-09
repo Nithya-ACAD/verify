@@ -14,6 +14,51 @@ check50:
           NIGHTS LIKE THIS
           Slow It Down
         exit: 0
+    question2:
+      - run: sqlite3 songify.db < queries/2.sql
+        stdout: |
+          Who|0.00289
+          Alibi (with Pabllo Vittar & Yseult)|0.00526
+          i like the way you kiss me|0.000938
+          Yellow|0.00239
+          Iris|0.00125
+        exit: 0
+    question3:
+      - run: sqlite3 songify.db < queries/3.sql
+        stdout: |
+          Die With A Smile|96|art pop,dance pop,pop
+          Si Antes Te Hubiera Conocido|96|reggaeton,reggaeton colombiano,urbano latino
+        exit: 0
+    question4:
+      - run: sqlite3 songify.db < queries/4.sql
+        stdout: |
+          Taste|Short n' Sweet|Sabrina Carpenter|Island Records
+          Espresso|Espresso|Sabrina Carpenter|Island Records
+          Please Please Please|Please Please Please|Sabrina Carpenter|Island Records
+          Bed Chem|Short n' Sweet|Sabrina Carpenter|Island Records
+          Good Graces|Short n' Sweet|Sabrina Carpenter|Island Records
+          Juno|Short n' Sweet|Sabrina Carpenter|Island Records
+        exit: 0
+    question5:
+      - run: sqlite3 songify.db < queries/5.sql
+        stdout: |
+          BIRDS OF A FEATHER|2024-05-17|104.978
+          Taste|2024-08-23|112.964
+          Who|2024-07-19|116.034
+          Espresso|2024-04-12|103.969
+          Please Please Please|2024-06-06|107.071
+          Good Luck, Babe!|2024-04-05|116.712
+          Beautiful Things|2024-04-05|105.029
+          Too Sweet|2024-03-22|117.038
+          UWAIE|2024-08-15|103.001
+          Move|2024-06-07|119.992
+          Not Like Us|2024-05-04|101.061
+          we can't be friends (wait for your love)|2024-03-08|115.842
+          Austin (Boots Stop Workin')|2024-02-16|114.935
+          I Love You, I'm Sorry|2024-06-21|115.94
+          LUNA|2023-12-01|100.019
+          PELIGROSA|2024-08-09|100.025
+        exit: 0
     question6:
       - run: sqlite3 songify.db < queries/6.sql
         stdout: |
@@ -26,3 +71,117 @@ check50:
           WILDFLOWER|Billie Eilish
           Iris|The Goo Goo Dolls
         exit: 0
+    question7:
+      - run: sqlite3 songify.db < queries/7.sql
+        stdout: |
+          Espresso|Sabrina Carpenter|2024-04-12
+          Good Luck, Babe!|Chappell Roan|2024-04-05
+          Beautiful Things|Benson Boone|2024-04-05
+          Sweater Weather|The Neighbourhood|2013-04-19
+          MILLION DOLLAR BABY|Tommy Richman|2024-04-26
+          The Night We Met|Lord Huron|2015-04-06
+          Slow It Down|Benson Boone|2024-04-05
+        exit: 0
+    question8:
+      - run: sqlite3 songify.db < queries/8.sql
+        stdout: |
+          Lose Control|Teddy Swims|2023-09-15
+          HOT TO GO!|Chappell Roan|2023-09-22
+          LUNA|Feid,ATL Jacob|2023-12-01
+          NIGHTS LIKE THIS|The Kid LAROI|2023-11-10
+          Seven (feat. Latto) (Explicit Ver.)|Jung Kook,Latto|2023-11-03
+        exit: 0
+    question9:
+      - run: sqlite3 songify.db < queries/9.sql
+        stdout: |
+          Please Please Please
+        exit: 0
+    question10:
+      - run: sqlite3 songify.db < queries/10.sql
+        stdout: |
+          we can't be friends (wait for your love)
+          I Love You, I'm Sorry
+        exit: 0 
+    question11:
+      - run: sqlite3 songify.db < queries/11.sql
+        stdout: |
+          Good Luck, Babe!|Chappell Roan|0.582|0.7
+          HOT TO GO!|Chappell Roan|0.757|0.742
+          FE!N (feat. Playboi Carti)|Travis Scott,Playboi Carti|0.882|0.569
+        exit: 0
+    question12:
+      - run: sqlite3 songify.db < queries/12.sql
+        stdout: |
+          BIRDS OF A FEATHER
+          Guess featuring Billie Eilish
+          WILDFLOWER
+        exit: 0
+    question13:
+      - run: sqlite3 songify.db < queries/13.sql
+        stdout: |
+          Lose Control
+          One Of The Girls (with JENNIE, Lily Rose Depp)
+          HOT TO GO!
+          FE!N (feat. Playboi Carti)
+          LUNA
+          NIGHTS LIKE THIS
+          Seven (feat. Latto) (Explicit Ver.)
+        exit: 0
+    question14:
+      - run: sqlite3 songify.db < queries/14.sql
+        stdout: |
+          Interscope
+          Darkroom/Interscope Records
+          Island Records
+          BIGHIT MUSIC
+          Bichota/Interscope Records
+          Chappell Roan PS/ Island
+          Night Street Records, Inc./Warner Records Inc.
+          Rubyworks / Universal-Island Records Ltd
+          Universal Music India Pvt Ltd.
+          American Dogwood / EMPIRE
+          Atlantic Records
+          Warner Records
+          Mercury Records / Republic Records
+          Sony Music Latin/La Industria
+          Jive
+          FloyyMenor under exclusive license to UnitedMasters LLC
+          XO / Republic Records
+          Columbia
+          PULSE Records
+          Keinemusik
+          Kendrick Lamar, under exclusive license to Interscope Records
+          Domino Recording Co
+          Play It Again Sam
+          Twisted Elegance
+          Republic Records
+          Lloud Co./RCA Records
+          Djo
+          Artemas
+          Taylor Swift
+          RCA Records Label
+          Parlophone UK
+          Universal Music Latino
+          Gracie Abrams, under exclusive license to Interscope Records
+          Cactus Jack/Epic
+          UMLE - Latino
+        exit: 0
+    question15:
+      - run: sqlite3 songify.db < queries/15.sql
+        stdout: |
+          Die With A Smile|Lady Gaga,Bruno Mars
+          Big Dawgs|Hanumankind,Kalmi
+          Guess featuring Billie Eilish|Charli xcx,Billie Eilish
+          I Had Some Help (Feat. Morgan Wallen)|Post Malone,Morgan Wallen
+          Gata Only|FloyyMenor,Cris Mj
+          One Of The Girls (with JENNIE, Lily Rose Depp)|The Weeknd,JENNIE,Lily-Rose Depp
+          Move|Adam Port,Stryv,Keinemusik,Orso,Malachiii
+          Alibi (with Pabllo Vittar & Yseult)|Sevdaliza,Pabllo Vittar,Yseult
+          New Woman (feat. ROSALÍA)|LISA,ROSALÍA
+          SE ME OLVIDA|Maisak,Feid
+          FE!N (feat. Playboi Carti)|Travis Scott,Playboi Carti
+          LUNA|Feid,ATL Jacob
+          See You Again (feat. Kali Uchis)|Tyler, The Creator,Kali Uchis
+          Seven (feat. Latto) (Explicit Ver.)|Jung Kook,Latto
+        exit: 0
+    
