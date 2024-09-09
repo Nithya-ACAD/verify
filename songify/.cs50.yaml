@@ -2,7 +2,7 @@ check50:
   checks:
     queries:
       - run: sqlite3 songify.db < queries.sql
-        stdout:
+        stdout: |
           Beautiful Things
           Big Dawgs
           I Wanna Be Yours
