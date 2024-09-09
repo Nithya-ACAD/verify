@@ -1,7 +1,7 @@
 check50:
   checks:
-    queries:
-      - run: sqlite3 songify.db < queries.sql
+    1:
+      - run: sqlite3 songify.db < queries/1.sql
         stdout: |
           Beautiful Things
           Big Dawgs
@@ -13,4 +13,16 @@ check50:
           Iris
           NIGHTS LIKE THIS
           Slow It Down
+        exit: 0
+    6:
+      - run: sqlite3 songify.db < queries/6.sql
+        stdout: |
+          Die With A Smile|Lady Gaga,Bruno Mars
+          Too Sweet|Hozier
+          One Of The Girls (with JENNIE, Lily Rose Depp)|The Weeknd,JENNIE,Lily-Rose Depp
+          Sweater Weather|The Neighbourhood
+          Not Like Us|Kendrick Lamar
+          Yellow|Coldplay
+          WILDFLOWER|Billie Eilish
+          Iris|The Goo Goo Dolls
         exit: 0
