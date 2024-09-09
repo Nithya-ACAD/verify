@@ -1,0 +1,16 @@
+check50:
+  checks:
+    queries:
+      - run: sqlite3 songify.db < queries.sql
+        stdout:
+          Beautiful Things
+          Big Dawgs
+          I Wanna Be Yours
+          The Night We Met
+          New Woman (feat. ROSALÍA)
+          Yellow
+          WILDFLOWER
+          Iris
+          NIGHTS LIKE THIS
+          Slow It Down
+        exit: 0
